@@ -1,0 +1,19 @@
+.img-thumbnail img {
+    width: 100%;
+}
+
+.img-thumbnail {
+    padding: 0;
+}
+
+.img-thumbnail .caption-full {
+    padding: 9px;
+}
+
+.navbar{
+	margin-bottom: 1em;
+}
+
+.delete-form {
+    display: inline;
+}
