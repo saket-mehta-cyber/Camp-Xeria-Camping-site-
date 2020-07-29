@@ -2,21 +2,24 @@
 <%- include("../partials/header") %>
 
 <div class="container">
-
-	<header class="jumbotron">
-		<h1> Welcome to Yelp Camp! </h1>
-		<p> View our hand-picked campgrounds from all over the world</p>
-		<p>
-			<a class="btn btn-primary btn-lg" href="/campgrounds/new">Add New Campground</a>
-		</p>	
-	</header>
+    <div class="row text-center" style="display:flex ; flex-wrap: wrap;">
+		<div class="col-12 col-sm-12">	
+			<header class="jumbotron">
+				<h1> Welcome to Yelp Camp! </h1>
+				<p> View our hand-picked campgrounds from all over the world</p>
+				<p>
+					<a class="btn btn-primary btn-lg" href="/campgrounds/new">Add New Campground</a>
+				</p>	
+			</header>
+		</div>	
+	</div>
 
 
 
 	<div class="row text-center" style="display:flex ; flex-wrap: wrap;">
 
 	<% campgrounds.forEach(function(campground){  %>
-	<div class="col-12 col-sm-6 col-md-3">
+	<div class="col-6 col-sm-4 col-md-3">
 		<div class="img-thumbnail">  
 			<img  class="img-thumbnail" src="<%= campground.image %> ">
 			<div class="figure-caption">

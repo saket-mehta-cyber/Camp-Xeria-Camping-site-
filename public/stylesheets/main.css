@@ -17,3 +17,24 @@
 .delete-form {
     display: inline;
 }
+
+
+.jumbotron {
+  background: url(https://www.cornerstonedog.com/wp-content/uploads/2020/05/puppybookbg.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+	color: lightcyan; 
+  
+}
+@media (max-width: 767px) {
+  .jumbotron {
+    height: 240px;
+  }
+  .jumbotron .container h1 {
+    font-size: 25px;
+	 
+  }
+  .jumbotron .container p {
+    font-size: 16px;
+  }
+}
