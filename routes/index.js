@@ -29,7 +29,7 @@ router.post("/register", function(req, res){
       				return res.redirect("/register");
     }
 	   passport.authenticate("local")(req,res,function(){
-		   req.flash("success", "Welcome to YelpCamp " + user.username);
+		   req.flash("success", "Welcome to CampXeria " + user.username + "!");
 		   res.redirect("/campgrounds");
 	   })
    })
@@ -49,7 +49,7 @@ router.get("/login", function(req, res){
           successRedirect: "/campgrounds",
           failureRedirect: "/login",
           failureFlash: "Password or username is incorrect! OR Account doesn't exist! ",
-          successFlash: "Welcome to YelpCamp, " + req.body.username + "!"
+          successFlash: "Welcome to CampXeria, " + req.body.username + "!"
         })(req, res);
     });
 
