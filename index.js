@@ -17,7 +17,7 @@ var commentRoutes  = require("./routes/comments"),
     campgoundRoutes= require("./routes/campgrounds"),
     indexRoutes     = require("./routes/index");
 
-mongoose.connect('mongodb+srv://saket:saketMehta@cluster0.iajwu.mongodb.net/<dbname>?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://<user>:<password>@cluster0.iajwu.mongodb.net/<dbname>?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false
